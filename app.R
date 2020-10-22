@@ -4,7 +4,7 @@ library(dplyr)
 library(stringr)
 library(ggplot2)
 
-#load("C:/Users/verce/Downloads/AirBnB.Rdata")
+load("C:/Users/verce/Downloads/AirBnB.Rdata")
 
 
 thedata <- select(L, Apartment_ID=id, ApartmentName=name, Host_ID=host_id, Host_Name=host_name, Location=host_location, 
@@ -84,10 +84,10 @@ ui <- fluidPage (
         
         mainPanel (
                 plotOutput("coolplot"),
-                ),
+                )
         
         
-    ), #sidebarpanel
+    ) #sidebarpanel
 ) #fluidpage 
 
 
